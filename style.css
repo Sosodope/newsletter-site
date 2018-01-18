@@ -1,5 +1,5 @@
 html{
-	background: #bb7d7d;
+	background: #f2eff0;
 }
 
 body{
@@ -86,7 +86,7 @@ header li:first-child{
 }
 #main p, #main h3{
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 60px;
 	color: #bb7d7d;
 	text-align: center;
 	font-size: 2em;
@@ -99,12 +99,12 @@ form{
 	width: 25%;
 	height: 25px;
 	border-radius: 15px; 
-	padding: 0;
+	padding: 3px;
 	margin-right: 10px; 
 	outline: none;
 }
 #click{
-	height: 25px;
+	height: 31px;
 	border-radius: 15px;
 }
 .box{
@@ -116,6 +116,7 @@ form{
 	position: relative;
 	z-index: 1;
 	margin-left: 15px; 
+	transition: all 0.3s ease-in-out;
 }
 .box p{
 	position: absolute;
@@ -125,15 +126,29 @@ form{
 	text-align: center;
 	font-size: 1.5em;
 	margin-left: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.box:hover p{
+	transform: scale(1.2);
+}
+.box:hover img{
+	opacity: 0.7;
 }
 .card p{
 	color: #fff;
 	text-shadow: 10px 10px 10px #000;
 }
-
-
-
-
+/*footer*/
+footer img{
+	width: 5%;
+    border-radius: 50%;
+}
+footer{
+	padding-bottom: 20px;
+	margin: 10px;
+	text-align: center;
+	font-size: 0.75em;
+}
 
 
 
