@@ -54,3 +54,90 @@ header li:first-child{
 	width: 40%;
     border-radius: 50%;
 }
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+#main{
+	background: url("image-1.jpeg");
+	height: 50vh;
+}
+#main p, #main h3{
+	margin: 0;
+	padding-top: 20px;
+	color: #bb7d7d;
+	text-align: center;
+	font-size: 2em;
+}
+form{
+	padding-top: 30px;
+	text-align: center;
+}
+#email{
+	width: 25%;
+	height: 25px;
+	border-radius: 15px; 
+	padding: 0;
+	margin-right: 10px; 
+	outline: none;
+}
+#click{
+	height: 25px;
+	border-radius: 15px;
+}
+.box{
+	position: relative;
+	float: left;
+	margin: 15px 0;
+}
+.box img{
+	position: relative;
+	z-index: 1;
+	margin-left: 15px; 
+}
+.box p{
+	position: absolute;
+	width: 100%;
+	top: 15%;
+	z-index: 2;
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 15px;
+}
+.card p{
+	color: #fff;
+	text-shadow: 10px 10px 10px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
