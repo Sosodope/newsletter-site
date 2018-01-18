@@ -53,6 +53,10 @@ header li:first-child{
 #logo img{
 	width: 40%;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+#logo img:hover, #logo img:focus{
+	transform: rotate(45deg);
 }
 /**
  * For modern browsers
@@ -81,7 +85,7 @@ header li:first-child{
     *zoom: 1;
 }
 #main{
-	background: url("image-1.jpeg");
+	background: url("img/image-1.jpeg");
 	height: 50vh;
 }
 #main p, #main h3{
