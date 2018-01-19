@@ -84,16 +84,27 @@ header li:first-child{
 .cf {
     *zoom: 1;
 }
-#main{
+.background{
 	background: url("img/image-1.jpeg");
 	height: 50vh;
+	transition: background 0.5s ease-in-out;
+	color: #000;
+	text-shadow: 10px 10px 10px #fff;
 }
-#main p, #main h3{
+.background p, .background h3{
 	margin: 0;
 	padding-top: 60px;
 	color: #bb7d7d;
 	text-align: center;
 	font-size: 2em;
+}
+.background.new{
+  background: url("img/image-5.jpeg");
+  height: 50vh;
+ }
+ .background.new p, .background.new h3{
+  color: #fff;
+  text-shadow: 10px 10px 10px #000;
 }
 form{
 	padding-top: 30px;

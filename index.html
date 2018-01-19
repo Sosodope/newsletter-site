@@ -23,13 +23,14 @@
 		</div>
 	</header>
 
-	<div id="main">
+	<div class="background" id="form-bg">
 		<h3>Join the mailing list</h3>
-		<p>Sign Up Now</p>
-
+		<p onmouseover="changeButton();">Sign Up Now</p>
+<!-- 		<a href="#" onmouseover="changeButton();">Click Me</a>
+ -->
 		<form>
 			<input type="email" id="email" name="email" placeholder="Enter your email">
-			<input type="submit" id="click" value="Sign up">
+			<input type="submit" id="click" value="Sign up" onmouseover="changeButton();">
 		</form>
 	</div>
 
@@ -55,7 +56,6 @@
 			</a>
 		</div>
 	</div>
-
 	<footer>
 		<img src="img/same.png">
 		<div>
@@ -66,6 +66,8 @@
 			</ul>
 		</div>
 	</footer>
+
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
