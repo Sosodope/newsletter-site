@@ -24,3 +24,12 @@ img:hover{
 	transform: scale(1.1);
 	border: 50px solid #fff;
 }
+div {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+div.fade {
+    opacity: 0;
+    transition: none;
+}

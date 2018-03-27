@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+	<script>
+  document.getElementsByClassName('container').className = 'fade';
+</script>
 	<h3>Just another newsletter</h3>
 	<div class="container">
 		<img src="img/img-1.jpeg">
@@ -14,5 +17,10 @@
 		<img src="img/img-4.jpeg">
 		<img src="img/img-5.jpeg">
 	</div>
+	<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  	document.getElementsByClassName('container').classList.toggle('fade');
+  });
+</script>
 </body>
 </html>
